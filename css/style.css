@@ -3,7 +3,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap'); */
 
 /* common css start */
-
 * {
     margin: 0;
     padding: 0;
@@ -12,10 +11,6 @@
 
 img {
     vertical-align: middle;
-}
-
-.back_top {
-    background: aqua;
 }
 
 img.rounded {
@@ -31,13 +26,12 @@ img.rounded {
     height: 500px;
     width: 700px;
     display: flex;
-    margin: 100px auto;
+    /* margin: 100px auto; */
     /* background: #000; */
     text-align: center;
 }
 
 /* Front Part Start */
-
 .id_card_inner {
     width: 49%;
     /* background: red; */
@@ -45,24 +39,21 @@ img.rounded {
     margin: 5px;
 }
 
-.id_front {
-    height: 38%;
-    background: white;
-}
-
-.id_front:nth-child(3) {
-    height: 19%;
-    margin-bottom: 2px;
-}
-
 .front_mid {
-    background: #15858c;
-    position: fixed;
-}
-
-.front_mid {
-    /* line-height: ; */
     position: relative;
+    background: #15858c;
+    height: 40%;
+}
+
+.front_mid h1 {
+    padding-top: 70px;
+    color: #fff;
+}
+
+.front_mid h6 {
+    padding-top: 20px;
+    color: #fff;
+    font-size: 20px;
 }
 
 .id_image {
@@ -84,28 +75,20 @@ img.rounded {
     border-radius: 50%;
 }
 
+.front_top {
+    position: relative;
+    height: 40%;
+}
+
 .front_top img {
     width: 100%;
     height: 33.33%;
 }
 
-.front_top {
+.front_bottom {
     position: relative;
-}
-
-.logo_part img {
-    width: 70%;
-}
-
-.logo_part {
-    position: absolute;
-    /* right: 0;
-    top: 0px; */
-}
-
-.front_mid h1 {
-    padding-top: 70px;
-    color: #fff;
+    background: #15858c;
+    height: 20%;
 }
 
 .name {
@@ -125,19 +108,9 @@ img.rounded {
     /* margin-bottom: 50px; */
 }
 
-.front_mid h6 {
-    padding-top: 20px;
-    color: #fff;
-    font-size: 20px;
-}
-
-.footer_bottom {
+.std_id_part {
     height: 50%;
     background: #f1f1f1;
-}
-
-.footer_part {
-    background: #15858c;
 }
 
 .std_id_part h6 {
@@ -146,37 +119,42 @@ img.rounded {
 }
 /* Front Part-End */
 
+
 /* Back Part Start */
-.id_back {
-    margin: 5px;
-    background: white;
-}
-
-.back_mid {
-    background: #15858c;
-    height: 45%;
-    padding: 20px 0;
-}
-
 .back_top {
     position: relative;
-    height: 15%;
+    height: 20%;
+}
 
+.logo_part {
+    position: absolute;
+    margin-top: 5%;
 }
 
 .logo_part img {
     width: 70%;
 }
 
-.logo_part {
-    position: absolute;
-    margin-top: 2%;
+.back_mid {
+    background: #15858c;
+    height: 55%;
+    display: flex;
+    align-items: center;
 }
 
-.back_mid img {
-    height: 100%;
-    width: 100%;
+.qr_container {
+    margin: 0 auto;
+}
+
+.qr_container img {
+    height: 70%;
+    width: 70%;
+    padding: 13px 0;
     object-fit: contain;
+}
+
+.back-bottom {
+    height: 25%;
 }
 
 .back_bottom h6 {
@@ -190,5 +168,4 @@ img.rounded {
     font-size: 25px;
     color: #258b8f;
 }
-
 /* Back Part End */
